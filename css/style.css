@@ -801,8 +801,8 @@ body {
     line-height: 1.5;
 }
 
-/* Smart Classroom */
-.smart-classroom {
+/* Smart Classroom Section */
+.smart-classroom-section {
     margin-top: 6rem;
     background: rgba(58, 123, 213, 0.05);
     border: 1px solid rgba(212, 175, 55, 0.2);
@@ -971,11 +971,10 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .smart-classroom {
+    .smart-classroom-section {
         padding: 2rem;
     }
 }
-
 /* ===========================
    ADMISSIONS SECTION
    =========================== */
