@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harcharan Singh Memorial Public Senior Secondary School</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js for 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HSMP School</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="home" class="hero">
+        <!-- 3D Canvas Background -->
+        <canvas id="hero-canvas"></canvas>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-subtitle">Excellence in Education Since Foundation</div>
+            <h1 class="hero-title">
+                <span class="title-line">Harcharan Singh Memorial</span>
+                <span class="title-line">Public Senior Secondary School</span>
+            </h1>
+            <p class="hero-description">
+                Where tradition meets innovation. Empowering minds through 
+                cutting-edge digital learning and timeless values.
+            </p>
+            <div class="hero-buttons">
+                <a href="#admissions" class="btn btn-primary">Apply Now</a>
+                <a href="#about" class="btn btn-secondary">Discover More</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            
+            <!-- Section Header -->
+            <div class="section-header fade-in-up">
+                <span class="section-label">Our Legacy</span>
+                <h2 class="section-title">About Harcharan Singh Memorial</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content">
+                
+                <!-- Left: Story -->
+                <div class="about-story fade-in-left">
+                    <h3>A Legacy of Excellence</h3>
+                    <p>
+                        Founded with a vision to provide world-class education rooted in strong values, 
+                        Harcharan Singh Memorial Public Senior Secondary School stands as a beacon of 
+                        academic excellence and holistic development.
+                    </p>
+                    <p>
+                        Our institution seamlessly blends traditional educational values with cutting-edge 
+                        technology. With state-of-the-art smart classrooms equipped with interactive 
+                        smartboards, we prepare students not just for exams, but for life in a 
+                        rapidly evolving digital world.
+                    </p>
+                    <p>
+                        We believe in nurturing not just brilliant minds, but compassionate leaders who 
+                        will shape tomorrow's world with integrity, innovation, and purpose.
+                    </p>
+                </div>
+
+                <!-- Right: Stats -->
+                <div class="about-stats fade-in-right">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Expert Faculty</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Achievements</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💻</div>
+                        <div class="stat-number" data-target="30">0</div>
+                        <div class="stat-label">Smart Classrooms</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-section fade-in-up">
+                <h3 class="timeline-title">Our Journey</h3>
+                <div class="timeline">
+                    
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">Foundation</div>
+                            <h4>The Beginning</h4>
+                            <p>Established with a vision to transform lives through quality education</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">Digital Era</div>
+                            <h4>Smart Classrooms Launched</h4>
+                            <p>Introduced cutting-edge smart boards and digital learning infrastructure</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">Recognition</div>
+                            <h4>Award-Winning Institution</h4>
+                            <p>Recognized for excellence in academics and holistic student development</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">Today</div>
+                            <h4>Leading the Future</h4>
+                            <p>Continuing our mission to nurture tomorrow's leaders and innovators</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="academics-section">
+        <div class="academics-container">
+            
+            <!-- Section Header -->
+            <div class="section-header fade-in-up">
+                <span class="section-label">Academic Excellence</span>
+                <h2 class="section-title">Programs & Curriculum</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    A comprehensive educational experience blending traditional wisdom with modern innovation
+                </p>
+            </div>
+
+            <!-- Academic Levels -->
+            <div class="academic-levels">
+                
+                <div class="level-card fade-in-up">
+                    <div class="level-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 5L5 20L30 35L55 20L30 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 40L30 55L55 40" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 30L30 45L55 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Primary Education</h3>
+                    <p>Building strong foundations through interactive learning, creative exploration, and character development.</p>
+                    <ul class="level-features">
+                        <li>Interactive Smart Boards</li>
+                        <li>Activity-Based Learning</li>
+                        <li>Foundational Skills Development</li>
+                    </ul>
+                </div>
+
+                <div class="level-card fade-in-up">
+                    <div class="level-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect x="10" y="10" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 25H40M20 30H40M20 35H35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Middle School</h3>
+                    <p>Comprehensive curriculum fostering critical thinking, creativity, and academic excellence across all subjects.</p>
+                    <ul class="level-features">
+                        <li>Digital Learning Resources</li>
+                        <li>Project-Based Learning</li>
+                        <li>Co-curricular Activities</li>
+                    </ul>
+                </div>
+
+                <div class="level-card fade-in-up">
+                    <div class="level-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 15V30L40 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Senior Secondary</h3>
+                    <p>Advanced learning with specialized streams preparing students for higher education and competitive examinations.</p>
+                    <ul class="level-features">
+                        <li>Science, Commerce & Arts Streams</li>
+                        <li>Advanced Smart Classrooms</li>
+                        <li>Career Guidance & Counseling</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Subject Highlights -->
+            <div class="subjects-showcase fade-in-up">
+                <h3 class="showcase-title">Our Comprehensive Curriculum</h3>
+                <div class="subjects-grid">
+                    
+                    <div class="subject-card">
+                        <div class="subject-emoji">🔬</div>
+                        <h4>Sciences</h4>
+                        <p>Physics, Chemistry, Biology with state-of-the-art laboratories</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">📐</div>
+                        <h4>Mathematics</h4>
+                        <p>Advanced problem-solving and analytical thinking</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">🌍</div>
+                        <h4>Social Sciences</h4>
+                        <p>History, Geography, Political Science, Economics</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">📚</div>
+                        <h4>Languages</h4>
+                        <p>English, Hindi, Punjabi - Building communication excellence</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">💻</div>
+                        <h4>Computer Science</h4>
+                        <p>Coding, AI basics, and digital literacy</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">🎨</div>
+                        <h4>Arts & Culture</h4>
+                        <p>Music, Fine Arts, Dance, and Drama</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">⚽</div>
+                        <h4>Physical Education</h4>
+                        <p>Sports, Yoga, and wellness programs</p>
+                    </div>
+
+                    <div class="subject-card">
+                        <div class="subject-emoji">🧠</div>
+                        <h4>Life Skills</h4>
+                        <p>Leadership, critical thinking, and emotional intelligence</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Smart Classroom Feature -->
+            <div class="smart-classroom fade-in-up">
+                <div class="smart-content">
+                    <div class="smart-text">
+                        <h3>Digital Learning Environment</h3>
+                        <p>
+                            Our classrooms are equipped with cutting-edge smartboards and interactive 
+                            displays, transforming traditional teaching into immersive, engaging experiences. 
+                            Students interact with 3D models, virtual experiments, and multimedia content 
+                            that brings every subject to life.
+                        </p>
+                        <div class="smart-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Interactive Smartboards in Every Classroom</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Digital Learning Management System</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Virtual Labs & Simulations</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Online Resources & E-Library</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smart-visual">
+                        <div class="tech-orbit">
+                            <div class="orbit-ring ring-1"></div>
+                            <div class="orbit-ring ring-2"></div>
+                            <div class="orbit-ring ring-3"></div>
+                            <div class="tech-center">
+                                <div class="tech-icon">💻</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions-section">
+        <div class="admissions-container">
+            
+            <!-- Section Header -->
+            <div class="section-header fade-in-up">
+                <span class="section-label">Join Our Community</span>
+                <h2 class="section-title">Admissions</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Begin your journey towards excellence. We welcome students who are eager to learn, 
+                    grow, and make a positive impact on the world.
+                </p>
+            </div>
+
+            <!-- Admission Process -->
+            <div class="admission-process">
+                <h3 class="process-title fade-in-up">Admission Process</h3>
+                
+                <div class="process-steps">
+                    
+                    <div class="process-step fade-in-up">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Inquiry & Registration</h4>
+                            <p>Submit an online inquiry form or visit our campus to learn more about our programs and collect the admission prospectus.</p>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+
+                    <div class="process-step fade-in-up">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Application Submission</h4>
+                            <p>Complete the admission form with required documents including birth certificate, transfer certificate, and previous academic records.</p>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+
+                    <div class="process-step fade-in-up">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Entrance Assessment</h4>
+                            <p>Students participate in an age-appropriate assessment to evaluate academic readiness and subject knowledge.</p>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+
+                    <div class="process-step fade-in-up">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Parent-Student Interview</h4>
+                            <p>Meet with our academic counselors to discuss the student's aspirations, learning needs, and our educational approach.</p>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+
+                    <div class="process-step fade-in-up">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h4>Admission Confirmation</h4>
+                            <p>Receive admission decision and complete enrollment formalities including fee payment and document verification.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Requirements & Dates Grid -->
+            <div class="admission-info-grid">
+                
+                <!-- Requirements -->
+                <div class="info-card fade-in-left">
+                    <div class="info-header">
+                        <div class="info-icon">📋</div>
+                        <h3>Required Documents</h3>
+                    </div>
+                    <ul class="info-list">
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Completed Application Form</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Birth Certificate (Original & Copy)</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Transfer Certificate from Previous School</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Previous Academic Records/Report Cards</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Passport Size Photographs (4 copies)</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Address Proof (Aadhaar/Utility Bill)</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">✓</span>
+                            <span>Guardian (Aadhaar Card)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Important Dates -->
+                <div class="info-card fade-in-right">
+                    <div class="info-header">
+                        <div class="info-icon">📅</div>
+                        <h3>Important Dates</h3>
+                    </div>
+                    <div class="dates-timeline">
+                        <div class="date-item">
+                            <div class="date-marker">
+                                <div class="date-dot"></div>
+                            </div>
+                            <div class="date-content">
+                                <div class="date-month">January - March</div>
+                                <div class="date-event">Admission Registration Opens</div>
+                            </div>
+                        
+                            
+                        </div>
+                        <div class="date-item">
+                            <div class="date-marker">
+                                <div class="date-dot"></div>
+                            </div>
+                            <div class="date-content">
+                                <div class="date-month">April</div>
+                                <div class="date-event">Classes Start</div>
+                            </div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-marker">
+                                <div class="date-dot"></div>
+                            </div>
+                            <div class="date-content">
+                                <div class="date-month">June</div>
+                                <div class="date-event">Summer Break</div>
+                            </div>
+                        </div>
+
+                        <div class="date-item">
+                            <div class="date-marker">
+                                <div class="date-dot"></div>
+                            </div>
+                            <div class="date-content">
+                                <div class="date-month">December</div>
+                                <div class="date-event">Winter Break</div>
+                            </div>
+                        
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Section -->
+            <div class="admission-cta fade-in-up">
+                <div class="cta-content">
+                    <h3>Ready to Begin Your Journey?</h3>
+                    <p>Take the first step towards academic excellence and holistic development. Our admissions team is here to guide you through every step of the process.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-secondary">Download Prospectus</a>
+                        <a href="#contact" class="btn btn-outline">Schedule Campus Visit</a>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admission Highlights -->
+            <div class="admission-highlights fade-in-up">
+                <div class="highlight-item">
+                    <div class="highlight-icon">🎓</div>
+                    <div class="highlight-text">
+                        <h4>Merit-Based Admissions</h4>
+                        <p>Selection based on academic potential and holistic development</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">💰</div>
+                    <div class="highlight-text">
+                        <h4>Scholarships Available</h4>
+                        <p>Financial assistance for deserving and meritorious students</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">🤝</div>
+                    <div class="highlight-text">
+                        <h4>Transparent Process</h4>
+                        <p>Clear guidelines and fair evaluation at every stage</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-container">
+            
+            <!-- Section Header -->
+            <div class="section-header fade-in-up">
+                <span class="section-label">Our Campus</span>
+                <h2 class="section-title">Gallery</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Explore our state-of-the-art facilities, vibrant campus life, and moments of excellence
+                </p>
+            </div>
+
+            <!-- Gallery Filters -->
+            <div class="gallery-filters fade-in-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="campus">Campus</button>
+                <button class="filter-btn" data-filter="classrooms">Smart Classrooms</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item fade-in-up" data-category="campus">
+                    <div class="gallery-image campus-building">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Main Campus Building</h4>
+                                <p>Our iconic campus architecture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item fade-in-up" data-category="classrooms">
+                    <div class="gallery-image smart-classroom">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Smart Classroom</h4>
+                                <p>Interactive learning environment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item fade-in-up" data-category="campus">
+                    <div class="gallery-image library">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>School Library</h4>
+                                <p>A haven for knowledge seekers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item fade-in-up" data-category="sports">
+                    <div class="gallery-image sports-ground">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Sports Ground</h4>
+                                <p>Where champions are made</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item fade-in-up" data-category="events">
+                    <div class="gallery-image annual-function">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Annual Function</h4>
+                                <p>Celebrating achievements together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item fade-in-up" data-category="classrooms">
+                    <div class="gallery-image science-lab">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Science Laboratory</h4>
+                                <p>Hands-on learning experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item fade-in-up" data-category="campus">
+                    <div class="gallery-image playground">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Play Area</h4>
+                                <p>Where fun meets learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item fade-in-up" data-category="events">
+                    <div class="gallery-image cultural-event">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Cultural Festival</h4>
+                                <p>Showcasing talent and creativity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item fade-in-up" data-category="classrooms">
+                    <div class="gallery-image computer-lab">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Computer Lab</h4>
+                                <p>Digital literacy for the future</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Campus Highlights -->
+            <div class="campus-highlights fade-in-up">
+                <h3 class="highlights-title">Campus Facilities</h3>
+                <div class="facilities-grid">
+                    
+                    <div class="facility-card">
+                        <div class="facility-icon">🏫</div>
+                        <h4>Modern Infrastructure</h4>
+                        <p>Spacious classrooms with natural lighting and ventilation</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-icon">🔬</div>
+                        <h4>Advanced Laboratories</h4>
+                        <p>Well-equipped labs for Physics, Chemistry, Biology & Computer Science</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-icon">📚</div>
+                        <h4>Resource Library</h4>
+                        <p>Extensive collection of books, journals, and digital resources</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-icon">🏃</div>
+                        <h4>Sports Complex</h4>
+                        <p>Multi-sport grounds and indoor gaming facilities</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-icon">🎭</div>
+                        <h4>Auditorium</h4>
+                        <p>State-of-the-art venue for events and performances</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-icon">🚌</div>
+                        <h4>Transport Facility</h4>
+                        <p>Safe and comfortable bus service covering wide routes</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            
+            <!-- Section Header -->
+            <div class="section-header fade-in-up">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    We're here to answer your questions and guide you through the admission process
+                </p>
+            </div>
+
+            <!-- Contact Content Grid -->
+            <div class="contact-content">
+                
+                <!-- Contact Information -->
+                <div class="contact-info fade-in-left">
+                    
+                    <div class="info-block">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h4>Address</h4>
+                            <p>Harcharan Singh Memorial Public<br>Senior Secondary School<br>Ramdas</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">📞</div>
+                        <div class="info-details">
+                            <h4>Phone</h4>
+                            <p>+91 9876944301<br>+91 9872444301<br>+919646873006</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-details">
+                            <h4>Email</h4>
+                            <p>hsmpschoolramdas@gmail.com<br>hsmpschool9@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-details">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Saturday (Summer): 8:00 AM - 2:00 PM<br>Monday - Saturday (Winter): 9:00 AM - 3:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper fade-in-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="general">General Information</option>
+                                <option value="academic">Academic Programs</option>
+                                <option value="facilities">Facilities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Message
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="location-container">
+            
+            <!-- Section Header -->
+            <div class="section-header fade-in-up">
+                <span class="section-label">Find Us</span>
+                <h2 class="section-title">Our Location</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Map and Directions -->
+            <div class="location-content fade-in-up">
+                
+                <!-- Map Container -->
+                <div class="map-container">
+                    <!-- Replace this iframe with your actual Google Maps embed code -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.522087122809!2d74.916624425915!3d31.973859674596678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391959cc97238079%3A0x314804dc64575417!2sHarcharan%20Singh%20Memorial%20Public%20School%2C%20SH25%2C%20Ramdas%2C%20Punjab%20143603!5e0!3m2!1sen!2sin!4v1766827630306!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Directions Info -->
+                <div class="directions-info">
+                    <h3>How to Reach Us</h3>
+                    
+                    <div class="direction-item">
+                        <div class="direction-icon">🚗</div>
+                        <div class="direction-text">
+                            <h4>By Car</h4>
+                            <p>Easy access from main highway. Ample parking space available on campus.</p>
+                        </div>
+                    </div>
+
+                    <div class="direction-item">
+                        <div class="direction-icon">🚌</div>
+                        <div class="direction-text">
+                            <h4>By Public Transport</h4>
+                            <p>Multiple bus routes available. Nearest bus stop is 5 minutes walking distance.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="direction-item">
+                        <div class="direction-icon">🚆</div>
+                        <div class="direction-text">
+                            <h4>By Train</h4>
+                            <p>Nearest railway station is 10 km away. Taxi and auto services readily available.</p>
+                        </div>
+                    </div> -->
+
+                    <a href="https://www.google.com/maps/place/Harcharan+Singh+Memorial+Public+School,+SH25,+Ramdas,+Punjab+143603/@31.973859674596678,74.916624425915,17z" target="_blank" class="btn btn-outline get-directions-btn">
+                        Get Directions
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-content">
+                
+                <div class="footer-col">
+                    <h3 class="footer-logo">HSMP School</h3>
+                    <p class="footer-tagline">Excellence in Education Since Foundation</p>
+                    <p class="footer-text">Empowering minds through cutting-edge digital learning and timeless values.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📞 +91 9876944301</li>
+                        <li>✉️ hsmpschool9@gmail.com</li>
+                        <li>📍 Ramdas</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Harcharan Singh Memorial Public Senior Secondary School. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
