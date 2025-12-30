@@ -257,3 +257,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// ===========================
+// THEME TOGGLE
+// ===========================
+
+const themeToggle = document.getElementById('themeToggle');
+const htmlElement = document.documentElement;
+
+// Check for saved theme preference or default to 'dark'
+const currentTheme = localStorage.getItem('theme') || 'dark';
+htmlElement.setAttribute('data-theme', currentTheme);
+
+// Update 3D scene colors based on theme
+function update3DColors(theme) {
+    if (theme === 'light') {
+        // Update particle colors for light theme
+        if (typeof particlesMaterial !== 'undefined') {
+            particlesMaterial.color.setHex(0xC9A961);
+        }
+        if (typeof material1 !== 'undefined') {
+            material1.color.setHex(0x2563EB);
+        }
+        if (typeof material2 !== 'undefined') {
+            material2.color.setHex(0xC9A961);
+        }
+    } else {
+        // Update particle colors for dark theme
+        if (typeof particlesMaterial !== 'undefined') {
+            particlesMaterial.color.setHex(0xD4AF37);
+        }
+        if (typeof material1 !== 'undefined') {
+            material1.color.setHex(0x3A7BD5);
+        }
+        if (typeof material2 !== 'undefined') {
+            material2.color.setHex(0xD4AF37);
+        }
+    }
+}
+
+// Initialize theme
+update3DColors(currentTheme);
+
+// Toggle theme
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        update3DColors(newTheme);
+    });
+}
